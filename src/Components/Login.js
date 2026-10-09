@@ -12,10 +12,10 @@ class LoginPage extends Component {
   render() {
     return (
       <Grid container className="login-page">
-  <Grid size={6.9} className="left-side">
-    <img src={logoo} alt="Logo" />
+ <Grid size={6.9} className="left-side">
+  <img src={logoo} alt="Logo" />
 
-    <h1 className="heading">
+  <h1 className="heading">
   <span className="heading-top">
     See everyday moments from your
   </span>
@@ -29,33 +29,48 @@ class LoginPage extends Component {
 
         </Grid>
 
-        <Grid size={5.1} className="right-side">
-          <div className="login-box">
+<Grid size={5.1} className="right-side">
+  <div className="login-box">
+    <img
+      src={logoo}
+      alt="Instagram"
+      className="mobile-logo"
+    />
 
-          <h2>Log into Instagram</h2>
-          <input type="text" placeholder="Mobile number, username or email"/>
+    <h2>Log into Instagram</h2>
 
-          <input type="password" placeholder="Password"/>
+    <input
+      type="text"
+      placeholder="Mobile number, username or email"
+    />
 
-          <button className="login-button">Log in</button>
-           <a href="https://www.instagram.com/accounts/password/reset/">
-            Forgot password?
-          </a>
-         <button className="facebook-button">
-         <FacebookIcon />
-         Log in with Facebook
-         </button>
+    <input
+      type="password"
+      placeholder="Password"
+    />
 
-            <button className="create-button">
-              Create new account
-            </button>
-<div className="meta-brand">
-  <img src={meta} alt="Meta" />
-  <span>Meta</span>
-</div>
+    <button className="login-button">Log in</button>
 
-          </div>
-        </Grid>
+    <a href="https://www.instagram.com/accounts/password/reset/">
+      Forgot password?
+    </a>
+
+    <button className="facebook-button">
+      <FacebookIcon />
+      Log in with Facebook
+    </button>
+
+    <button className="create-button">
+      Create new account
+    </button>
+
+    <div className="meta-brand">
+      <img src={meta} alt="Meta" />
+      <span>Meta</span>
+    </div>
+
+  </div>
+</Grid>
         <Grid container className="footer">
           <Grid size={12} className="footer-links">
           

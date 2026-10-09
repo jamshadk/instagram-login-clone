@@ -306,4 +306,90 @@ body{
 }
 
 
-@media screen and (max-width: 768px) { .login-page { display: flex; flex-direction: column; width: 100%; height: auto; min-height: 100vh; overflow: visible; } .left-side { flex: none; width: 100%; height: auto; overflow: visible; padding-bottom: 25px; } /* Logo */ .left-side > img:not(.img1) { width: 65px; max-width: 100%; height: auto; margin: 20px 0 0 20px; } /* Heading */ .heading { font-size: clamp(23px, 5vw, 32px); line-height: 1.4; margin: 25px 12px 15px; text-align: center; } .heading-top { white-space: normal; } /* Promotional image */ .img1 { width: 90% !important; max-width: 400px !important; height: auto !important; max-height: 280px; object-fit: contain; margin: 20px auto; } /* Login section */ .right-side { flex: none; width: 100%; height: auto; min-height: 0; padding: 35px 20px; border-left: none; border-top: 1px solid #444; display: flex; align-items: center; justify-content: center; overflow: visible; } .login-box { width: 100%; max-width: 420px; } .login-box h2 { font-size: 18px; margin-bottom: 20px; } .login-box input { width: 100%; height: 55px; font-size: 16px; } .login-button, .facebook-button, .create-button { width: 100%; height: 48px; font-size: 15px; } .login-box a { margin: 25px 0 35px; } .meta-brand { margin-top: 25px; } /* Footer */ .footer { width: 100%; min-height: 0; padding: 25px 12px; gap: 20px; } .footer-links { gap: 12px 15px; } .footer-links a { font-size: 11px; white-space: normal; text-align: center; } .footer-bottom { flex-wrap: wrap; gap: 12px; font-size: 12px; } } /* Small phones */ @media screen and (max-width: 380px) { .heading { font-size: 22px; } .img1 { width: 95% !important; max-height: 220px; } .right-side { padding: 25px 15px; } .footer-links { gap: 10px; } }
+.mobile-logo {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .left-side {
+    display: none !important;
+  }
+
+  .login-page {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+  }
+
+  .right-side {
+    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 35px 24px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border: none;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .mobile-logo {
+    display: block;
+    width: 175px;
+    height: auto;
+    margin: 0 auto 40px;
+    object-fit: contain;
+  }
+
+  .login-box h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .login-box input,
+  .login-button,
+  .facebook-button,
+  .create-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .login-box input {
+    height: 48px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .login-button,
+  .facebook-button,
+  .create-button {
+    min-height: 44px;
+  }
+
+  .login-box a {
+    margin: 20px 0 25px;
+  }
+
+  .meta-brand {
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .footer {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-side {
+    display: none !important;
+  }
+}
