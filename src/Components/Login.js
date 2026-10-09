@@ -5,7 +5,7 @@ import "./Login.css";
 import meta from "../images/meta.jpg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import picture from "../images/picture.jpg";
-import Checkbox from "@mui/material/Checkbox";
+
 
 
 class LoginPage extends Component {
@@ -25,7 +25,7 @@ class LoginPage extends Component {
   </span>
 </h1>
 
-          <img className="img1" src={picture} alt="picture" />
+          <img className="img1" src={picture} alt="Instagram login preview" />
 
         </Grid>
 
@@ -38,7 +38,9 @@ class LoginPage extends Component {
           <input type="password" placeholder="Password"/>
 
           <button className="login-button">Log in</button>
-            <a href="#">Forgot password?</a>
+           <a href="https://www.instagram.com/accounts/password/reset/">
+            Forgot password?
+          </a>
          <button className="facebook-button">
          <FacebookIcon />
          Log in with Facebook
