@@ -56,23 +56,23 @@ class LoginPage extends Component {
         </Grid>
         <Grid container className="footer">
           <Grid size={12} className="footer-links">
-              <a href="#">Meta</a>
-              <a href="#">About</a>
-              <a href="#">Blog</a>
-              <a href="#">Jobs</a>
-              <a href="#">Help</a>
-              <a href="#">API</a>
-              <a href="#">Privacy</a>
-              <a href="#">Terms</a>
-              <a href="#">Locations</a>
-              <a href="#">Popular</a>
-              <a href="#">Instagram Lite</a>
-              <a href="#">Meta AI</a>
-              <a href="#">Muse</a>
-              <a href="#">Threads</a>
-              <a href="#">Contact Uploading & Non-Users</a>
-              <a href="#">Meta Verified</a>
-
+          
+<a href="https://about.meta.com/">Meta</a>
+<a href="https://about.instagram.com/">About</a>
+<a href="https://about.instagram.com/blog/">Blog</a>
+<a href="https://about.instagram.com/about-us/careers/">Jobs</a>
+<a href="https://help.instagram.com/">Help</a>
+<a href="https://developers.facebook.com/docs/instagram/">API</a>
+<a href="https://privacycenter.instagram.com/">Privacy</a>
+<a href="https://help.instagram.com/581066165581870/">Terms</a>
+<a href="https://www.instagram.com/explore/locations/">Locations</a>
+<a href="https://www.instagram.com/explore/">Popular</a>
+<a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+<a href="https://ai.meta.com/">Meta AI</a>
+<a href="https://www.instagram.com/">Muse</a>
+<a href="https://www.threads.com/">Threads</a>
+<a href="https://help.instagram.com/">Contact Uploading &amp; Non-Users</a>
+<a href="https://www.instagram.com/">Meta Verified</a>
           </Grid>
           <Grid size={12} className="footer-bottom">
     <span className="language-dropdown">
