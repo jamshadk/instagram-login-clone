@@ -69,10 +69,10 @@ class LoginPage extends Component {
       Create new account
     </button>
 
-    <div className="meta-brand">
-      <img src={meta} alt="Meta" />
-      <span>Meta</span>
-    </div>
+   <div className="meta-brand">
+  <img src={meta} alt="Meta" />
+  <span>Meta</span>
+</div>
 
   </div>
 </Grid>
