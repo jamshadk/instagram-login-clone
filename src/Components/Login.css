@@ -362,7 +362,8 @@ body{
 }
 
 
-.mobile-logo {
+
+.mobile-language {
   display: none;
 }
 
@@ -370,7 +371,6 @@ body{
   display: none;
 }
 
-/* Mobile layout */
 @media screen and (max-width: 768px) {
   .login-page {
     display: flex !important;
@@ -378,63 +378,70 @@ body{
     width: 100% !important;
     min-height: 100vh;
     min-height: 100dvh;
-    background: #fff;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
     box-sizing: border-box;
   }
 
-  /* Hide promotional section */
   .left-side {
     display: none !important;
   }
 
-  /* Make login section full width */
   .right-side {
     display: flex !important;
-    flex: 1 1 100% !important;
+    flex: 1 1 auto !important;
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     min-height: 100vh;
     min-height: 100dvh;
-    padding: 30px 32px 24px !important;
     margin: 0 !important;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: stretch;
+    padding: 0 32px 24px !important;
     border: none !important;
     background: #fff !important;
+    box-sizing: border-box;
   }
 
-  /* Arrange login content vertically */
   .login-box {
     display: flex;
     flex-direction: column;
+    flex: 1;
     width: 100% !important;
     max-width: none !important;
     min-width: 0;
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
-    flex: 1;
   }
 
-  /* Instagram logo */
+  .mobile-language {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0 0;
+  }
+
+  .language-button {
+    border: none;
+    background: transparent;
+    color: #737373;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
   .mobile-logo {
-    display: block;
-    width: 120px;
-    height: 120px;
+    display: block !important;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
-    margin: 125px auto 110px;
+    margin: 100px auto 110px;
   }
 
-  /* Hide heading to match your reference screenshot */
   .login-box h2 {
     display: none;
   }
 
-  /* Input fields */
   .login-box input {
     display: block;
     width: 100% !important;
@@ -442,88 +449,74 @@ body{
     min-width: 0;
     margin: 0 0 16px !important;
     padding: 0 20px !important;
-    box-sizing: border-box;
     border: 1px solid #dbdbdb;
     border-radius: 18px;
     background: #fff;
     color: #262626;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
-  .login-box input::placeholder {
-    color: #737373;
-    opacity: 1;
-  }
-
-  /* Log in button */
   .login-button {
-    display: block;
     width: 100% !important;
-    min-width: 0;
     height: 56px;
     margin: 8px 0 0 !important;
-    padding: 0 16px !important;
-    box-sizing: border-box;
     border: none;
     border-radius: 30px;
     background: #0866ff;
     color: #fff;
     font-size: 18px;
+    box-sizing: border-box;
   }
 
-  /* Forgot password */
   .login-box a {
     display: block;
-    width: 100%;
     margin: 38px 0 0 !important;
     text-align: center;
-    font-size: 16px;
     color: #262626;
+    font-size: 16px;
     text-decoration: none;
   }
 
-  /* Hide Facebook login on mobile */
   .facebook-button {
     display: none !important;
   }
 
-  /* Push Create account toward the bottom */
   .create-button {
     display: block;
     width: 100% !important;
-    min-width: 0;
     min-height: 56px;
     margin: auto 0 30px !important;
-    padding: 10px 16px !important;
-    box-sizing: border-box;
     border: 1px solid #0866ff;
     border-radius: 30px;
-    background: transparent;
+    background: #fff;
     color: #0866ff;
     font-size: 18px;
+    box-sizing: border-box;
   }
 
-  /* Meta branding */
   .meta-brand {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     gap: 6px;
     margin: 0 0 15px !important;
-    color: #262626;
+    color: #262626 !important;
   }
 
   .meta-brand img {
+    display: block !important;
     width: 30px;
     height: auto;
-    object-fit: contain;
+    filter: none !important;
   }
 
-  /* Hide desktop footer */
+  .meta-brand span {
+    color: #262626 !important;
+    font-size: 20px;
+  }
+
   .footer {
     display: none !important;
   }
 }
-
-
-
