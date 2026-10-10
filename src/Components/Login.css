@@ -1,3 +1,59 @@
+ 
+@media screen and (max-width: 768px) {
+  .meta-brand {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    margin: 30px 0 15px !important;
+    color: #262626 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .meta-brand span {
+    color: #262626 !important;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .meta-brand img {
+    display: block !important;
+    width: 30px;
+    height: auto;
+    opacity: 1 !important;
+    filter: brightness(0) saturate(100%) !important;
+  }
+}
+.mobile-language {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-language {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0 0;
+  }
+
+  .language-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    color: #737373;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+ 
+ 
+ 
  img {
     width: 14%;
     max-width: 450px;
@@ -310,86 +366,164 @@ body{
   display: none;
 }
 
+.mobile-logo {
+  display: none;
+}
+
+/* Mobile layout */
 @media screen and (max-width: 768px) {
+  .login-page {
+    display: flex !important;
+    flex-direction: column;
+    width: 100% !important;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Hide promotional section */
   .left-side {
     display: none !important;
   }
 
-  .login-page {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    background: #000;
-  }
-
+  /* Make login section full width */
   .right-side {
-    display: flex;
-    flex: 1 1 100%;
-    width: 100%;
-    max-width: 100%;
+    display: flex !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
     min-height: 100vh;
-    padding: 35px 24px;
+    min-height: 100dvh;
+    padding: 30px 32px 24px !important;
+    margin: 0 !important;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
-    background: #000;
-    border: none;
+    align-items: stretch;
+    border: none !important;
+    background: #fff !important;
   }
 
+  /* Arrange login content vertically */
   .login-box {
-    width: 100%;
-    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    flex: 1;
   }
 
+  /* Instagram logo */
   .mobile-logo {
     display: block;
-    width: 175px;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 125px auto 110px;
+  }
+
+  /* Hide heading to match your reference screenshot */
+  .login-box h2 {
+    display: none;
+  }
+
+  /* Input fields */
+  .login-box input {
+    display: block;
+    width: 100% !important;
+    height: 60px;
+    min-width: 0;
+    margin: 0 0 16px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    border-radius: 18px;
+    background: #fff;
+    color: #262626;
+    font-size: 16px;
+  }
+
+  .login-box input::placeholder {
+    color: #737373;
+    opacity: 1;
+  }
+
+  /* Log in button */
+  .login-button {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+    height: 56px;
+    margin: 8px 0 0 !important;
+    padding: 0 16px !important;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    background: #0866ff;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  /* Forgot password */
+  .login-box a {
+    display: block;
+    width: 100%;
+    margin: 38px 0 0 !important;
+    text-align: center;
+    font-size: 16px;
+    color: #262626;
+    text-decoration: none;
+  }
+
+  /* Hide Facebook login on mobile */
+  .facebook-button {
+    display: none !important;
+  }
+
+  /* Push Create account toward the bottom */
+  .create-button {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+    min-height: 56px;
+    margin: auto 0 30px !important;
+    padding: 10px 16px !important;
+    box-sizing: border-box;
+    border: 1px solid #0866ff;
+    border-radius: 30px;
+    background: transparent;
+    color: #0866ff;
+    font-size: 18px;
+  }
+
+  /* Meta branding */
+  .meta-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 0 0 15px !important;
+    color: #262626;
+  }
+
+  .meta-brand img {
+    width: 30px;
     height: auto;
-    margin: 0 auto 40px;
     object-fit: contain;
   }
 
-  .login-box h2 {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .login-box input,
-  .login-button,
-  .facebook-button,
-  .create-button {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .login-box input {
-    height: 48px;
-    margin-bottom: 12px;
-    font-size: 14px;
-  }
-
-  .login-button,
-  .facebook-button,
-  .create-button {
-    min-height: 44px;
-  }
-
-  .login-box a {
-    margin: 20px 0 25px;
-  }
-
-  .meta-brand {
-    margin-top: 40px;
-    justify-content: center;
-  }
-
+  /* Hide desktop footer */
   .footer {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .left-side {
-    display: none !important;
-  }
-}
+
+

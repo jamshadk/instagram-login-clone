@@ -30,14 +30,19 @@ class LoginPage extends Component {
         </Grid>
 
 <Grid size={5.1} className="right-side">
-  <div className="login-box">
-    <img
-      src={logoo}
-      alt="Instagram"
-      className="mobile-logo"
-    />
+ <div className="login-box">
+   <div className="mobile-language">
+    <button type="button" className="language-button">
+      English (US) <span>⌄</span>
+    </button>
+  </div>
+  <img
+    src={logoo}
+    alt="Instagram"
+    className="mobile-logo"
+  />
 
-    <h2>Log into Instagram</h2>
+  <h2>Log into Instagram</h2>
 
     <input
       type="text"
@@ -53,7 +58,7 @@ class LoginPage extends Component {
 
     <a href="https://www.instagram.com/accounts/password/reset/">
       Forgot password?
-    </a>
+    </a><br></br>
 
     <button className="facebook-button">
       <FacebookIcon />
